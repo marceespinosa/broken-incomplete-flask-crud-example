@@ -24,6 +24,11 @@ def add():
   mysql.connection.commit()
 
   return '{"Result":"Success"}' # Really? maybe we should check!
+
+@app.route("/hello")  # Add Student
+def hello():
+    return '<h1>Hello and welcome to the website.</h1>'
+
   
 @app.route("/") #Default - Show Data
 def read(): # Name of the method
