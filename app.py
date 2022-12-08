@@ -41,7 +41,7 @@ def read(cursor):
         Result['Name'] = row[0].replace('\n', ' ')
         Result['Email'] = row[1]
         Result['ID'] = row[2]
-        html = html + (f"<tr style='border: 1px solid teal'><th  style='border: 1px solid teal'>{Result['Name']}</th> <th style='border: 1px solid teal'>{Result['Email']}</th></tr> <br>")
+        html = html + (f"<tr style='border: 1px solid red'><th  style='border: 1px solid red'>{Result['Name']}</th> <th style='border: 1px solid red'>{Result['Email']}</th></tr> <br>")
 
     html = f"<table style='border: 1px solid blue'><tr style='border: 1px solid red'><th  style='border: 1px solid black'>Name</th><th style='border: 1px solid red'>Email</th></tr>{html}</table>"
     # response = {'Results': Results, 'count': len(Results)}
